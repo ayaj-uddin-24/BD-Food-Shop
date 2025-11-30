@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./FoodItem.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
@@ -40,7 +40,10 @@ const FoodItem = ({ id, name, price, description, image }) => {
           <img src={assets.rating_starts} alt="" />
         </div>
         <p className="food-item-desc">{description}</p>
-        <p className="food-item-price"><span style={{paddingRight:"5px"}}>৳</span>{price}</p>
+        <p className="food-item-price">
+          <span style={{ paddingRight: "5px" }}>৳</span>
+          {price}
+        </p>
       </div>
     </div>
   );

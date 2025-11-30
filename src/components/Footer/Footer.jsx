@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import { assets } from "../../assets/assets";
 
@@ -39,7 +38,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 © Tomato.com - All Rights Reserved.
+        Copyright {new Date().getFullYear()} © Tomato.com - All Rights Reserved.
       </p>
     </div>
   );

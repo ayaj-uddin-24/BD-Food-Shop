@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext";
 import { useNavigate } from "react-router-dom";
@@ -59,7 +59,7 @@ const Cart = () => {
             <div className="cart-total-details">
               <b>Total</b>
               <b>
-              ৳{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 50}
+                ৳{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 50}
               </b>
             </div>
           </div>
